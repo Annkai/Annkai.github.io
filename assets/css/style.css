@@ -1,0 +1,424 @@
+.desktop {
+    margin: 0;
+    padding: 0;
+}
+
+/*Хедер*/
+
+.headinfo {
+    /*outline: solid 2px darkblue;*/
+    width: 100%;
+    height: 45px;
+    float: left;
+    background-color: #001a33;
+    font-family: Poppins, sans-serif;
+    /*Выбрать шрифт*/
+    color: white;
+    font-size: 15px;
+}
+
+.headinfo__all {
+    /*outline: solid 2px red;*/
+    float: left;
+    height: 45px;
+    line-height: 45px;
+    overflow: hidden;
+}
+
+.headinfo-name {
+    width: 69.3%;
+    font-family: 'Amatic SC', cursive;
+    padding-left: 0.7%;
+}
+
+.headinfo-social_links {
+    width: 30%;
+}
+
+.social a {
+    text-align: center;
+    vertical-align: middle;
+    font-size: 12px;
+    width: 22px;
+    height: 22px;
+    float: right;
+    background: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15), inset 0 0 50px rgba(0, 0, 0, 0.1);
+    border-radius: 50%;
+    color: #001a33;
+    padding: 5px;
+    margin: 8px 8px 0px 2px;
+    position: relative;
+    top: -1px;
+}
+
+.fa-facebook {
+    position: relative;
+    top: -4px;
+}
+
+.fa-vk {
+    position: relative;
+    top: -6px;
+    left: -3px;
+}
+
+.facebook a:hover {
+    background: #3b5998;
+    color: #fff;
+}
+
+.vk a:hover {
+    background: #5d84ae;
+    color: #fff;
+}
+
+/*Меню*/
+
+.menu {
+    /*outline: solid 2px darkblue;*/
+    width: 100%;
+    height: 80px;
+    float: left;
+    font-size: 14px;
+}
+
+.menu__all {
+    outline: solid 2px transparent;
+    float: left;
+    height: 80px;
+    line-height: 80px;
+    overflow: hidden;
+}
+
+.menu-logo {
+    width: 20%;
+}
+
+.menu-list {
+    width: 80%;
+}
+
+.menu-list__gallery {
+    outline: solid 2px transparent;
+    height: 40px;
+    line-height: 40px;
+    display: inline-block;
+    padding: 0 4vw 0 4vw;
+    color: black;
+}
+
+.menu-list__gallery:hover {
+    cursor: pointer;
+    color: #009999;
+}
+
+.menu-list__blog {
+    outline: solid 2px transparent;
+    height: 40px;
+    display: inline-block;
+    line-height: 40px;
+    padding: 0 4vw 0 4vw;
+}
+
+.menu-list__blog:hover {
+    cursor: pointer;
+    color: #009999;
+}
+
+.menu-list__slideshow {
+    outline: solid 2px transparent;
+    height: 40px;
+    display: inline-block;
+    line-height: 40px;
+    padding: 0 2vw 0 2vw;
+}
+
+.menu-list__slideshow:hover {
+    cursor: pointer;
+    color: #009999;
+}
+
+.menu-list__contacts {
+    outline: solid 2px transparent;
+    height: 40px;
+    display: inline-block;
+    line-height: 40px;
+    padding: 0 4vw 0 4vw;
+}
+
+.menu-list__contacts:hover {
+    cursor: pointer;
+    color: #009999;
+}
+
+.link-hover a {
+    display: inline-block;
+    color: black;
+    line-height: 1.5;
+    text-decoration: none;
+    cursor: pointer;
+    position: relative;
+}
+
+.link-hover a:hover {
+    color: #009999;
+}
+
+.link-hover a:after {
+    display: block;
+    content: "";
+    background-color: #009999;
+    height: 2px;
+    width: 0%;
+    left: 50%;
+    position: absolute;
+    -webkit-transition: width .2s ease-in-out;
+    -moz--transition: width .2s ease-in-out;
+    transition: width .2s ease-in-out;
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    transform: translateX(-50%);
+}
+
+.link-hover a:hover:after,
+.link-hover a:focus:after {
+    width: 100%;
+}
+
+/*Видео*/
+
+.video-box {
+    outline: solid 2px grey;
+    width: 100%;
+    height: 700px;
+  }
+
+.vika {
+    width: 100%;
+    height: 500px;
+    position: relative;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    z-index: -1;
+    overflow: hidden;
+   /* background-color: black;*/
+}
+
+/*слайдер двигащийся*/
+
+.slider_dv {
+    outline: solid 2px transparent;
+    height: 70%;
+    margin-left: 6%;
+    padding-bottom: 45px;
+}
+
+.prev {
+    outline: 2px solid;
+    height: 20px;
+    width: 20px;
+    background-color: darkblue;
+}
+
+/*Последнее опубликованное из блога*/
+
+.lastfromblog {
+    outline: solid 2px transparent;
+    width: 100%;
+    height: 400px;
+    overflow: hidden;
+}
+
+.lastblog {
+    outline: solid 2px transparent;
+    width: 65%;
+    height: 400px;
+    overflow: hidden;
+    float: left;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    /*background-color: #f4ffff;*/
+}
+
+.lastblog-box {
+    width: 89%;
+    height: 350px;
+    overflow: hidden;
+    box-sizing: border-box;
+    text-align: center;
+    background-color: #ffffff;
+}
+
+/*.lastblog-box:hover {
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+}*/
+
+.mapblog {
+    outline: solid 2px transparent;
+    width: 35%;
+    height: 400px;
+    float: left;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+}
+
+.mapblog-box {
+    width: 89%;
+    height: 350px;
+    overflow: hidden;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+/*Предпросмотр из блога*/
+
+.preblog_box {
+    outline: solid 2px transparent;
+    width: 100%;
+    height: 490px;
+    float: left;
+}
+
+.preblog {
+    outline: solid 2px transparent;
+    background-color: #f4ffff;
+    width: calc(100% / 3);
+    height: 490px;
+    float: left;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.preblog-text {
+    outline: solid 2px transparent;
+    border-radius: 1%;
+    background-color: #ffffff;
+    width: 89%;
+    height: 415px;
+    float: left;
+    overflow: hidden;
+    box-sizing: border-box;
+    padding: 9px;
+    text-align: center;
+}
+
+.preblog-text:hover {
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+}
+
+.blog-img {
+    width: 55%;
+}
+
+.blog2-img {
+    width: 60%;
+}
+
+.blog3-img {
+    width: 54%;
+}
+
+.readnext {
+    cursor: pointer;
+    text-align: right;
+}
+
+.readnext:hover {
+    color: #009999;
+}
+
+/*Ускоритель*/
+
+.footer {
+    width: 100%;
+    display: inline-block;
+    background-color: #ebebeb;
+    opacity: 0.38;
+    position: fixed;
+    bottom: 0;
+    height: 40px;
+    text-align: center;
+    font-size: 25px;
+    z-index: 2;
+}
+
+.boost-btn {
+    cursor: pointer;
+    width: 16px;
+    height: 15px;
+    margin: 16.5px auto;
+    transform: rotate(-45deg);
+    z-index: 2;
+    position: relative;
+}
+
+.boost {
+    width: 12px;
+    height: 12px;
+    border: 1px solid;
+    border-left: none;
+    border-bottom: none;
+}
+
+.boost-btn:hover {
+    color: red;
+}
+
+.boost2 {
+    position: absolute;
+    top: 3px;
+}
+
+.boost1 {
+    position: absolute;
+    right: 0;
+}
+
+/*Подвал*/
+
+.endinfo {
+    /*outline: solid 2px darkblue;*/
+    width: 100%;
+    height: 45px;
+    float: left;
+    background-color: #001a33;
+    font-family: Poppins, sans-serif;
+    /*Выбрать шрифт*/
+    color: white;
+    font-size: 15px;
+}
+
+.endinfo__all {
+    /*outline: solid 2px red;*/
+    float: left;
+    height: 45px;
+    line-height: 45px;
+    overflow: hidden;
+}
+
+.endinfo-name {
+    width: 69.3%;
+    padding-left: 0.7%;
+}
+
+.endinfo-social_links {
+    width: 30%;
+    text-align: right;
+}

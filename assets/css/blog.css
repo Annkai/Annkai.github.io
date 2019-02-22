@@ -3,10 +3,7 @@
     padding: 0;
 }
 
-@media screen and (min-width: 0px) and (max-width: 640px) {
-   
-  
-}
+@media screen and (min-width: 0px) and (max-width: 640px) {}
 
 /*Хедер*/
 
@@ -191,99 +188,21 @@
     width: 100%;
 }
 
-/*Видео*/
+/*Переход на главную страницу*/
 
-.video-box {
+.home {
     width: 100%;
-
-}
-
-.vika {
-    width: 100%;
-    max-height: 80vh;
-    position: relative;
-    left: 0;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    margin: auto;
-    z-index: -1;
-    overflow: hidden;
-    background-color: black;
-}
-
-/*слайдер двигащийся*/
-
-.slider_dv {
-    outline: solid 2px transparent;
-    height: 70%;
-    margin-left: 6%;
-    padding-bottom: 45px;
-}
-
-.prev {
-    outline: 2px solid;
-    height: 20px;
-    width: 20px;
-    background-color: darkblue;
-}
-
-/*Последнее опубликованное из блога*/
-
-.lastfromblog {
-    outline: solid 2px transparent;
-    width: 100%;
-    height: 400px;
-    overflow: hidden;
-}
-
-.lastblog {
-    outline: solid 2px transparent;
-    width: 65%;
-    height: 400px;
-    overflow: hidden;
+    height: 50px;
+    line-height: 50px;
+    background-color: orange;
     float: left;
-    top: 0;
-    left: 0;
-    display: flex;
-    align-items: center;
-    align-content: center;
-    justify-content: center;
-    /*background-color: #f4ffff;*/
+    font-size: 14px;
+    padding-left: 8px;
 }
 
-.lastblog-box {
-    width: 89%;
-    height: 350px;
-    overflow: hidden;
-    box-sizing: border-box;
-    text-align: center;
-    background-color: #ffffff;
-}
-
-/*.lastblog-box:hover {
-    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
-}*/
-
-.mapblog {
-    outline: solid 2px transparent;
-    width: 35%;
-    height: 400px;
-    float: left;
-    top: 0;
-    left: 0;
-    display: flex;
-    align-items: center;
-    align-content: center;
-    justify-content: center;
-}
-
-.mapblog-box {
-    width: 89%;
-    height: 350px;
-    overflow: hidden;
-    box-sizing: border-box;
-    text-align: center;
+.gohome {
+    text-decoration: none;
+    color: black;
 }
 
 /*Предпросмотр из блога*/
@@ -346,53 +265,6 @@
 
 .readnext:hover {
     color: #009999;
-}
-
-/*Ускоритель*/
-
-.footer {
-    width: 100%;
-    display: inline-block;
-    background-color: #ebebeb;
-    opacity: 0.38;
-    position: fixed;
-    bottom: 0;
-    height: 40px;
-    text-align: center;
-    font-size: 25px;
-    z-index: 2;
-}
-
-.boost-btn {
-    cursor: pointer;
-    width: 16px;
-    height: 15px;
-    margin: 16.5px auto;
-    transform: rotate(-45deg);
-    z-index: 2;
-    position: relative;
-}
-
-.boost {
-    width: 12px;
-    height: 12px;
-    border: 1px solid;
-    border-left: none;
-    border-bottom: none;
-}
-
-.boost-btn:hover {
-    color: red;
-}
-
-.boost2 {
-    position: absolute;
-    top: 3px;
-}
-
-.boost1 {
-    position: absolute;
-    right: 0;
 }
 
 /*Подвал*/

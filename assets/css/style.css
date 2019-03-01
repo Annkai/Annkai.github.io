@@ -3,15 +3,12 @@
     padding: 0;
 }
 
-@media screen and (min-width: 0px) and (max-width: 640px) {
-   
-  
-}
 
 /*Хедер*/
 
 .headinfo {
     /*outline: solid 2px darkblue;*/
+    display: block;
     width: 100%;
     height: 45px;
     float: left;
@@ -76,6 +73,112 @@
 .vk a:hover {
     background: #5d84ae;
     color: #fff;
+}
+
+/*Спрятанный хедер*/
+
+.hidden-menu {
+    display: none;
+    position: fixed;
+    list-style: none;
+    padding: 10px;
+    margin: 0;
+    box-sizing: border-box;
+    width: 200px;
+    background-color: #f4ffff;
+    height: 100%;
+    top: 0;
+    right: -200px;
+    transition: left .2s;
+    z-index: 2;
+    -webkit-transform: translateZ(0);
+    -webkit-backface-visibility: hidden;
+}
+
+.hidden-menu-ticker {
+    display: none;
+}
+
+.btn-menu {
+    display: none;
+    color: #fff;
+    background-color: #001a33;
+    padding: 5px;
+    position: absolute;
+    top: 5px;
+    right: 0;
+    cursor: pointer;
+    transition: left .23s;
+    z-index: 3;
+    width: 25px;
+    -webkit-transform: translateZ(0);
+    -webkit-backface-visibility: hidden;
+
+}
+
+.btn-menu span {
+    display: none;
+    height: 5px;
+    background-color: #fff;
+    margin: 5px 0 0;
+    transition: all .1s linear .23s;
+    position: relative;
+}
+
+.btn-menu span.first {
+    margin-top: 0;
+}
+
+.hidden-menu-ticker:checked~.btn-menu {
+    right: 0;
+}
+
+.hidden-menu-ticker:checked~.hidden-menu {
+    right: 0;
+}
+
+.hidden-menu-ticker:checked~.btn-menu span.first {
+    -webkit-transform: rotate(45deg);
+    top: 10px;
+}
+
+.hidden-menu-ticker:checked~.btn-menu span.second {
+    opacity: 0;
+}
+
+.hidden-menu-ticker:checked~.btn-menu span.third {
+    -webkit-transform: rotate(-45deg);
+    top: -10px;
+}
+
+.hidden-header {
+    display: none;
+    background-color: #001a33;
+    color: #fff;
+    text-align: left;
+    height: 43px;
+    line-height: 43px;
+    overflow: hidden;
+    padding-left: 5px;
+}
+
+h1 {
+    margin: 0;
+    padding: 0;
+    font-size: 14px;
+    font-family: 'Amatic SC', cursive;
+}
+
+.hidden-menu_vcl {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    line-height: 4;
+    font-size: 15px;
+}
+
+.hidden-menu_vcl:hover {
+    color: #009999;
 }
 
 /*Меню*/
@@ -214,6 +317,15 @@
 
 /*слайдер двигащийся*/
 
+.gogallery {
+     text-decoration: none;
+     color: black;
+}
+
+.gogallery:hover {
+    color: #009999;
+}
+
 .slider_dv {
     outline: solid 2px transparent;
     height: 70%;
@@ -221,16 +333,10 @@
     padding-bottom: 45px;
 }
 
-.prev {
-    outline: 2px solid;
-    height: 20px;
-    width: 20px;
-    background-color: darkblue;
-}
-
 /*Последнее опубликованное из блога*/
 
 .lastfromblog {
+    display: block;
     outline: solid 2px transparent;
     width: 100%;
     height: 400px;
@@ -250,6 +356,19 @@
     align-content: center;
     justify-content: center;
     /*background-color: #f4ffff;*/
+}
+
+.lastblog-hidden {
+    width: 65%;
+    height: 400px;
+    overflow: hidden;
+    float: left;
+    top: 0;
+    left: 0;
+    display: none;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
 }
 
 .lastblog-box {
@@ -348,11 +467,26 @@
     color: #009999;
 }
 
+.preblog-hidden {
+    outline: 2px solid transparent;
+    display: none;
+    background-color: #f4ffff;
+    width: 100%;
+    height: 490px;
+    float: left;
+    top: 0;
+    left: 0;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
 /*Ускоритель*/
 
 .footer {
     width: 100%;
-    display: inline-block;
+    display: none;
     background-color: #ebebeb;
     opacity: 0.38;
     position: fixed;
@@ -399,6 +533,7 @@
 
 .endinfo {
     /*outline: solid 2px darkblue;*/
+    display: block;
     width: 100%;
     height: 45px;
     float: left;
@@ -426,3 +561,100 @@
     width: 30%;
     text-align: right;
 }
+
+@media screen and (min-width: 0px) and (max-width: 640px) {
+
+    .headinfo,
+    .endinfo,
+    .menu,
+    .lastfromblog,
+    .preblog_box {
+        display: none;
+    }
+
+    .hidden-menu,
+    .btn-menu,
+    .hidden-header,
+    .btn-menu span,
+    .footer {
+        display: block;
+    }
+
+    .desktop {
+        font-size: 0.81em;
+    }
+
+    .fa-vk {
+        top: -3px;
+    }
+
+    .fa-facebook {
+        top: -1px;
+    }
+
+    .preblog-hidden {
+        display: flex;
+    }
+
+    .mapblog {
+        display: none;
+    }
+
+    .preblog-text {
+        height: 450px;
+    }
+}
+
+@media screen and (min-width: 641px) and (max-width: 900px) {
+
+    .preblog_box,
+    .lastblog {
+        display: none;
+    }
+
+    
+    .home {
+        height: 33px;
+        line-height: 33px;
+    }
+
+    .preblog-hidden {
+        display: flex;
+    }
+
+    .preblog-text {
+        height: 450px;
+        font-size: 0.91em;
+    }
+
+    .blog-img {
+        width: 40%;
+    }
+
+    .blog2-img {
+        width: 45%;
+    }
+
+    .blog3-img {
+        width: 39%;
+    }
+    
+    .lastblog-hidden {
+        display: flex;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+     .blog-img {
+        width: 30%;
+    }
+
+    .blog2-img {
+        width: 30%;
+    }
+
+    .blog3-img {
+        width: 30%;
+    }
+}
+

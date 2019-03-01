@@ -5,11 +5,36 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Photoblog | Gallery</title>
-    <link href="assets/css/slide.css" rel="stylesheet" type="text/css" />
+    <link href="assets/css/gallery.css" rel="stylesheet" type="text/css" />
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
 </head>
 
 <body class="desktop">
+
+    <input type="checkbox" id="hmt" class="hidden-menu-ticker">
+    <label class="btn-menu" for="hmt">
+  <span class="first"></span>
+  <span class="second"></span>
+  <span class="third"></span>
+</label>
+    <ul class="hidden-menu">
+        <li><a href="gallery.html" class="hidden-menu_vcl">ГАЛЕРЕЯ</a></li>
+        <li><a href="blog.html" class="hidden-menu_vcl">БЛОГ</a></li>
+        <li><a href="slide.html" class="hidden-menu_vcl">СЛАЙД-ШОУ</a></li>
+        <li><a href="contacts.html" class="hidden-menu_vcl">КОНТАКТЫ</a></li>
+        <li>
+            <div class="social facebook">
+                <a href="https://www.facebook.com/pg/olegrybalka75/posts/" target="_blank"><i class="fa fa-facebook fa-2x"></i></a>
+            </div>
+            <div class="social vk">
+                <a href="https://vk.com/id267634159" target="_blank"><i class="fa fa-vk fa-2x"></i></a>
+            </div>
+        </li>
+    </ul>
+
+    <header class="hidden-header">
+        <h1>Непридуманный Блог Творческих Людей</h1>
+    </header>
 
     <header class="headinfo">
         <div class="headinfo__all headinfo-name">Непридуманный Блог Творческих Людей</div>
@@ -27,14 +52,37 @@
         <div class="menu__all menu-logo">
         </div>
         <div class="menu__all menu-list">
-            <div class="menu-list__gallery link-hover"><a href="#">ГАЛЕРЕЯ</a></div>
+            <div class="menu-list__gallery link-hover"><a href="gallery.html">ГАЛЕРЕЯ</a></div>
             <div class="menu-list__blog link-hover"><a href="blog.html">БЛОГ</a></div>
             <div class="menu-list__slideshow link-hover"><a href="slide.html">СЛАЙД-ШОУ</a></div>
-            <div class="menu-list__contacts link-hover"><a href="#">КОНТАКТЫ</a></div>
+            <div class="menu-list__contacts link-hover"><a href="contacts.html">КОНТАКТЫ</a></div>
         </div>
     </div>
-    <div class="home"><a href="index.html" class="gohome">НА ГЛАВНУЮ</a> | ГАЛЕРЕЯ</div>
-Идёт загрузка фотографий...
+    <div class="home"><a href="index.html" class="gohome">НА ГЛАВНУЮ</a> | <span class="home_color">ГАЛЕРЕЯ</span></div>
+
+  <div class="hovergallery">
+    <img src="assets/img/2-71.jpg"></img>
+    <img src="assets/img/3-2.jpg"></img>
+    <img src="assets/img/3-5.jpg"></img>
+    <img src="assets/img/4-43.jpg"></img>
+    <img src="assets/img/4-056.jpg"></img>
+    <img src="assets/img/3692.jpg"></img>
+</div>
+
+
+       <header class="endinfo">
+        <div class="endinfo__all endinfo-name">2019
+        </div>
+        <div class="endinfo__all endinfo-social_links">
+            <div class="social facebook">
+                <a href="https://www.facebook.com/pg/olegrybalka75/posts/" target="_blank"><i class="fa fa-facebook fa-2x"></i></a>
+            </div>
+            <div class="social vk">
+                <a href="https://vk.com/id267634159" target="_blank"><i class="fa fa-vk fa-2x"></i></a>
+            </div>
+        </div>
+    </header>
+
 </body>
 
 </html>

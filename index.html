@@ -14,6 +14,31 @@
 
 <body class="desktop">
 
+    <input type="checkbox" id="hmt" class="hidden-menu-ticker">
+    <label class="btn-menu" for="hmt">
+  <span class="first"></span>
+  <span class="second"></span>
+  <span class="third"></span>
+</label>
+    <ul class="hidden-menu">
+        <li><a href="gallery.html" class="hidden-menu_vcl">ГАЛЕРЕЯ</a></li>
+        <li><a href="blog.html" class="hidden-menu_vcl">БЛОГ</a></li>
+        <li><a href="slide.html" class="hidden-menu_vcl">СЛАЙД-ШОУ</a></li>
+        <li><a href="contacts.html" class="hidden-menu_vcl">КОНТАКТЫ</a></li>
+        <li>
+            <div class="social facebook">
+                <a href="https://www.facebook.com/pg/olegrybalka75/posts/" target="_blank"><i class="fa fa-facebook fa-2x"></i></a>
+            </div>
+            <div class="social vk">
+                <a href="https://vk.com/id267634159" target="_blank"><i class="fa fa-vk fa-2x"></i></a>
+            </div>
+        </li>
+    </ul>
+
+    <header class="hidden-header">
+        <h1>Непридуманный Блог Творческих Людей</h1>
+    </header>
+
     <header class="headinfo">
         <div class="headinfo__all headinfo-name">Непридуманный Блог Творческих Людей</div>
         <div class="headinfo__all headinfo-social_links">
@@ -33,43 +58,42 @@
             <div class="menu-list__gallery link-hover"><a href="gallery.html">ГАЛЕРЕЯ</a></div>
             <div class="menu-list__blog link-hover"><a href="blog.html">БЛОГ</a></div>
             <div class="menu-list__slideshow link-hover"><a href="slide.html">СЛАЙД-ШОУ</a></div>
-            <div class="menu-list__contacts link-hover"><a href="#">КОНТАКТЫ</a></div>
+            <div class="menu-list__contacts link-hover"><a href="contacts.html">КОНТАКТЫ</a></div>
         </div>
     </div>
 
-       <div class="video-box">
-        <video preload="true"  muted autoplay loop width="100%" src="ex.mp4" type="video/mp4" class="vika">Аопопопл лолдолдолдо додл ророл
+    <div class="video-box">
+        <video preload="true" muted autoplay loop width="100%" src="ex.mp4" type="video/mp4" class="vika">Аопопопл лолдолдолдо додл ророл</video>
     </div>
-    
-    <script>
-     document.querySelector('video').playbackRate = 3;
 
-    </script> 
+    <script>
+        document.querySelector('video').playbackRate = 3;
+    </script>
 
 
     <div class="slider_dv">
-        <p class="readnext" style="text-align:left; font-size: 18px;">Перейти к галерее &raquo;</p>
+        <p style="text-align:left; font-size: 18px;"><a href="gallery.html" class="gogallery">Перейти к галерее &raquo;</a></p>
         <div class="slider autoplay">
             <div>
-               <img src="assets/img/3-5.jpg" width="80%"; height="80%";></img>
+                <img src="assets/img/3-5.jpg" width="80%" ; height="80%" ;></img>
             </div>
             <div>
-                <img src="assets/img/2-71.jpg" width="80%"; height="80%";></img>
+                <img src="assets/img/2-71.jpg" width="80%" ; height="80%" ;></img>
             </div>
             <div>
-                 <img src="assets/img/3692.jpg" width="80%"; height="80%";></img>
+                <img src="assets/img/3692.jpg" width="80%" ; height="80%" ;></img>
             </div>
             <div>
-                 <img src="assets/img/4-43.jpg" width="80%"; height="80%";></img>
+                <img src="assets/img/4-43.jpg" width="80%" ; height="80%" ;></img>
             </div>
             <div>
-                 <img src="assets/img/4-056.jpg" width="80%"; height="80%";></img>
+                <img src="assets/img/4-056.jpg" width="80%" ; height="80%" ;></img>
             </div>
             <div>
-                 <img src="assets/img/3-2.jpg" width="80%"; height="80%";></img>
+                <img src="assets/img/3-2.jpg" width="80%" ; height="80%" ;></img>
             </div>
         </div>
-            </div>
+    </div>
     <script>
         $('.autoplay').slick({
             slidesToShow: 3,
@@ -82,22 +106,78 @@
     </script>
 
     <div class="lastfromblog">
+
+        <div class="lastblog-hidden">
+            <div class="lastblog-box">
+                <h2>Последнее из блога</h2>
+                <h3>На льду</h3>
+                <p>Опубликовано 20.01.2019 в 15:26</p>
+                <p style="text-align: justify; text-indent: 20px;">Однажды, от скуки я приехал прогуляться на Минское море. Была зима, &minus;15. А то и ниже. Вода замерзла. Лед покрывал снег, на котором чернели многочисленные фигурки рыбаков. Любопытство взяло верх и через несколько минут я уже бодро
+                    и уверенно двигался по &laquo;водной&raquo; глади. Помню увлекся и зашел довольно далеко. Миновав крупное, рыбацкое сообщество остановился и обернулся...</p>
+                <p class="readnext">Читать далее &raquo;</p>
+            </div>
+        </div>
+
         <div class="lastblog">
             <div class="lastblog-box">
-        <h1>Последнее из блога</h1>
-        <h3>На льду</h3>
-        <p>Опубликовано 20.01.2019 в 15:26</p>
-        <p style="text-align: justify; text-indent: 20px;">Однажды, от скуки я приехал прогуляться на Минское море. Была зима, -15. А то и ниже. Вода замерзла. Лед покрывал снег, на котором чернели многочисленные фигурки рыбаков. Любопытство взяло верх и через несколько минут я уже бодро и уверенно двигался
-            по "водной" глади. Помню увлекся и зашел довольно далеко. Миновав крупное, рыбацкое сообщество остановился и обернулся..... Берега не было видно. И аж дух захватило. Кто-то посмеется в усы, а для городского человека, не рыбака, привыкшего
-            к твердой поверхности под ногами( и к пониманию того, что стоишь на земле, а не на, замерзшей, воде) это еще те ощущения. Но привыкаешь ко всему. Вот и в этот раз я ехал поснимать песчаный берег и корни деревьев во льду, а бонусом еще и прогулялся
-            от жд станции "Минское море" до жд станции "Ждановичи" по замерзшему морю... </p>
-        <p class="readnext">Читать далее &raquo;</p>
+                <h2>Последнее из блога</h2>
+                <h3>На льду</h3>
+                <p>Опубликовано 20.01.2019 в 15:26</p>
+                <p style="text-align: justify; text-indent: 20px;">Однажды, от скуки я приехал прогуляться на Минское море. Была зима, &minus;15. А то и ниже. Вода замерзла. Лед покрывал снег, на котором чернели многочисленные фигурки рыбаков. Любопытство взяло верх и через несколько минут я уже бодро
+                    и уверенно двигался по &laquo;водной&raquo; глади. Помню увлекся и зашел довольно далеко. Миновав крупное, рыбацкое сообщество остановился и обернулся... Берега не было видно. И аж дух захватило. Кто-то посмеется в усы, а для городского
+                    человека, не рыбака, привыкшего к твердой поверхности под ногами (и к пониманию того, что стоишь на земле, а не на замерзшей, воде) это еще те ощущения. Но привыкаешь ко всему. Вот и в этот раз я ехал поснимать песчаный берег и корни
+                    деревьев во льду, а бонусом еще и прогулялся от жд станции &laquo;Минское море&raquo; до жд станции &laquo;Ждановичи&raquo; по замерзшему морю... </p>
+                <p class="readnext">Читать далее &raquo;</p>
+            </div>
         </div>
-        </div>
+
         <div class="mapblog">
             <div class="mapblog-box">
-            <div style="overflow:hidden;width: 100%;position: relative;"><iframe width="100%" height="350px" src="https://maps.google.com/maps?width=700&amp;height=440&amp;hl=en&amp;q=%D0%9C%D0%B8%D0%BD%D1%81%D0%BA%D0%BE%D0%B5%20%D0%BC%D0%BE%D1%80%D0%B5+(%D0%9D%D0%B0%D0%B7%D0%B2%D0%B0%D0%BD%D0%B8%D0%B5)&amp;ie=UTF8&amp;t=&amp;z=10&amp;iwloc=B&amp;output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><div style="position: absolute;width: 80%;bottom: 10px;left: 0;right: 0;margin-left: auto;margin-right: auto;color: #000;text-align: center;"><small style="line-height: 1.8;font-size: 2px;background: #fff;">Powered by <a href="https://embedgooglemaps.com/ru/">embedgooglemaps RU</a> & <a href="https://iamsterdamcard.it">www.iamsterdamcard.it</a></small></div><style>#gmap_canvas img{max-width:none!important;background:none!important}</style></div><br />
+                <div style="overflow:hidden;width: 100%;position: relative;"><iframe width="100%" height="350px" src="https://maps.google.com/maps?width=700&amp;height=440&amp;hl=en&amp;q=%D0%9C%D0%B8%D0%BD%D1%81%D0%BA%D0%BE%D0%B5%20%D0%BC%D0%BE%D1%80%D0%B5+(%D0%9D%D0%B0%D0%B7%D0%B2%D0%B0%D0%BD%D0%B8%D0%B5)&amp;ie=UTF8&amp;t=&amp;z=10&amp;iwloc=B&amp;output=embed"
+                        frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+                    <div style="position: absolute;width: 80%;bottom: 10px;left: 0;right: 0;margin-left: auto;margin-right: auto;color: #000;text-align: center;"><small style="line-height: 1.8;font-size: 2px;background: #fff;">Powered by <a href="https://embedgooglemaps.com/ru/">embedgooglemaps RU</a> & <a href="https://iamsterdamcard.it">www.iamsterdamcard.it</a></small></div>
+                    <style>
+                        #gmap_canvas img {
+                            max-width: none!important;
+                            background: none!important
+                        }
+                    </style>
+                </div><br />
+            </div>
         </div>
+    </div>
+
+    <div class="preblog-hidden">
+        <div class="preblog-text">
+            <h4>ТУЧИ, НЕБО, СНЕГ И ЧАЙ</h4>
+            <p><small>Опубликовано 27.04.2018 в 13:35</small></p>
+            <img src="assets/img/blog1.jpg" class="blog-img">
+            <p style="text-align: justify; text-indent: 20px;">В новостной ленте попалась на глаза забавная картинка. Дед Мороз на фоне заснеженных елей и с посохом. Подпись &laquo;После 3-х месяцев зимы 5-й в подарок&raquo;. И в самом деле, конец апреля на дворе, а погода никак не успокоится. Снег чередуется
+                с дождем, солнце то прогревает воздух то прячется за облака... </p>
+            <p class="readnext">Читать далее &raquo;</p>
+        </div>
+    </div>
+
+    <div class="preblog-hidden">
+
+        <div class="preblog-text">
+            <h4>&laquo;А&raquo; ФЭСТ В ПАРКЕ ЛОШИЦА</h4>
+            <p><small>Опубликовано 18.08.2018 в 10:39</small></p>
+            <img src="assets/img/blog3-1.jpg" class="blog2-img">
+            <p style="text-align: justify; text-indent: 20px;">С недавнего времени Лошицкая усадьба стала знаменита не только, благодаря тенистым аллеям, утренним туманам, рыбакам, свадьбам, но и, уже ставшего ежегодным, &laquo;А&raquo; фэсту от пивзавода &laquo;Аливария&raquo;. Фестиваль от года к году
+                набирает обороты и если на прошлом празднике...</p>
+            <p class="readnext">Читать далее &raquo;</p>
+        </div>
+
+    </div>
+    <div class="preblog-hidden">
+        <div class="preblog-text">
+            <h4>НАЕДИНЕ С СОБОЙ...</h4>
+            <p><small>Опубликовано 01.08.2018 в 22:43</small></p>
+            <img src="assets/img/blog3-6.jpg" class="blog3-img">
+            <p style="text-align: justify; text-indent: 20px;">То, что каждый когда-нибудь хотел бросить все уехать подальше и побыть один это не секрет. Кто-то называет это перезагрузкой, кто-то отдыхом или сменой места, картинки перед глазами. Иногда для этого совсем необязательно ехать за тридевять
+                земель. Эту атмосферу можно найти и в...</p>
+            <p class="readnext">Читать далее &raquo;</p>
         </div>
     </div>
 
@@ -107,19 +187,19 @@
                 <h4>ТУЧИ, НЕБО, СНЕГ И ЧАЙ</h4>
                 <p><small>Опубликовано 27.04.2018 в 13:35</small></p>
                 <img src="assets/img/blog1.jpg" class="blog-img">
-                <p style="text-align: justify; text-indent: 20px;">В новостной ленте попалась на глаза забавная картинка. Дед Мороз на фоне заснеженных елей и с посохом. Подпись "После 3-х месяцев зимы 5-й в подарок". И в самом деле, конец апреля на дворе, а погода никак не успокоится. Снег чередуется
-                    с дождем, солнце то прогревает воздух то прячется за облака... </p>
+                <p style="text-align: justify; text-indent: 20px;">В новостной ленте попалась на глаза забавная картинка. Дед Мороз на фоне заснеженных елей и с посохом. Подпись &laquo;После 3-х месяцев зимы 5-й в подарок&raquo;. И в самом деле, конец апреля на дворе, а погода никак не успокоится. Снег
+                    чередуется с дождем... </p>
                 <p class="readnext">Читать далее &raquo;</p>
             </div>
         </div>
         <div class="preblog">
 
             <div class="preblog-text">
-                <h4>"А" ФЭСТ В ПАРКЕ ЛОШИЦА</h4>
+                <h4>&laquo;А&raquo; ФЭСТ В ПАРКЕ ЛОШИЦА</h4>
                 <p><small>Опубликовано 18.08.2018 в 10:39</small></p>
                 <img src="assets/img/blog3-1.jpg" class="blog2-img">
-                <p style="text-align: justify; text-indent: 20px;">С недавнего времени Лошицкая усадьба стала знаменита не только, благодаря тенистым аллеям, утренним туманам, рыбакам, свадьбам, но и, уже ставшего ежегодным, "А" фэсту от пивзавода "Аливария". Фестиваль от года к году набирает обороты
-                    и если на прошлом празднике...</p>
+                <p style="text-align: justify; text-indent: 20px;">С недавнего времени Лошицкая усадьба стала знаменита не только, благодаря тенистым аллеям, утренним туманам, рыбакам, свадьбам, но и, уже ставшего ежегодным, &laquo;А&raquo; фэсту от пивзавода &laquo;Аливария&raquo;. Фестиваль от года
+                    к году набирает обороты и если на прошлом празднике...</p>
                 <p class="readnext">Читать далее &raquo;</p>
             </div>
 

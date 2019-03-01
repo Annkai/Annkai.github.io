@@ -3,12 +3,12 @@
     padding: 0;
 }
 
-@media screen and (min-width: 0px) and (max-width: 640px) {}
 
 /*Хедер*/
 
 .headinfo {
     /*outline: solid 2px darkblue;*/
+    display: block;
     width: 100%;
     height: 45px;
     float: left;
@@ -73,6 +73,112 @@
 .vk a:hover {
     background: #5d84ae;
     color: #fff;
+}
+
+/*Спрятанный хедер*/
+
+.hidden-menu {
+    display: none;
+    position: fixed;
+    list-style: none;
+    padding: 10px;
+    margin: 0;
+    box-sizing: border-box;
+    width: 200px;
+    background-color: #f4ffff;
+    height: 100%;
+    top: 0;
+    right: -200px;
+    transition: left .2s;
+    z-index: 2;
+    -webkit-transform: translateZ(0);
+    -webkit-backface-visibility: hidden;
+}
+
+.hidden-menu-ticker {
+    display: none;
+}
+
+.btn-menu {
+    position: absolute;
+    display: none;
+    color: #fff;
+    background-color: #001a33;
+    padding: 5px;
+    top: 5px;
+    right: 0;
+    cursor: pointer;
+    transition: left .23s;
+    z-index: 3;
+    width: 25px;
+    -webkit-transform: translateZ(0);
+    -webkit-backface-visibility: hidden;
+
+}
+
+.btn-menu span {
+    display: none;
+    height: 5px;
+    background-color: #fff;
+    margin: 5px 0 0;
+    transition: all .1s linear .23s;
+    position: relative;
+}
+
+.btn-menu span.first {
+    margin-top: 0;
+}
+
+.hidden-menu-ticker:checked~.btn-menu {
+    right: 0;
+}
+
+.hidden-menu-ticker:checked~.hidden-menu {
+    right: 0;
+}
+
+.hidden-menu-ticker:checked~.btn-menu span.first {
+    -webkit-transform: rotate(45deg);
+    top: 10px;
+}
+
+.hidden-menu-ticker:checked~.btn-menu span.second {
+    opacity: 0;
+}
+
+.hidden-menu-ticker:checked~.btn-menu span.third {
+    -webkit-transform: rotate(-45deg);
+    top: -10px;
+}
+
+.hidden-header {
+    display: none;
+    background-color: #001a33;
+    color: #fff;
+    text-align: left;
+    height: 43px;
+    line-height: 43px;
+    overflow: hidden;
+    padding-left: 5px;
+}
+
+h1 {
+    margin: 0;
+    padding: 0;
+    font-size: 14px;
+    font-family: 'Amatic SC', cursive;
+}
+
+.hidden-menu_vcl {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    line-height: 4;
+    font-size: 15px;
+}
+
+.hidden-menu_vcl:hover {
+    color: #009999;
 }
 
 /*Меню*/
@@ -191,18 +297,27 @@
 /*Переход на главную страницу*/
 
 .home {
-    width: 100%;
+    width: 99.3%;
     height: 50px;
     line-height: 50px;
-    background-color: orange;
+    background-color: rgba(38, 38, 38, 0.03);
     float: left;
+    font-weight: bold;
     font-size: 14px;
-    padding-left: 8px;
+    padding-left: 0.7%;
 }
 
 .gohome {
     text-decoration: none;
     color: black;
+}
+
+.gohome:hover {
+    color: #808080;
+}
+
+.home_color {
+    color: #009999;
 }
 
 /*Предпросмотр из блога*/
@@ -212,6 +327,7 @@
     width: 100%;
     height: 490px;
     float: left;
+    display: block;
 }
 
 .preblog {
@@ -267,10 +383,73 @@
     color: #009999;
 }
 
+.preblog-hidden {
+    outline: 2px solid transparent;
+    display: none;
+    background-color: #f4ffff;
+    width: 100%;
+    height: 490px;
+    float: left;
+    top: 0;
+    left: 0;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+/*Ускоритель*/
+
+.footer {
+    width: 100%;
+    display: none;
+    background-color: #ebebeb;
+    opacity: 0.38;
+    position: fixed;
+    bottom: 0;
+    height: 40px;
+    text-align: center;
+    font-size: 25px;
+    z-index: 2;
+}
+
+.boost-btn {
+    cursor: pointer;
+    width: 16px;
+    height: 15px;
+    margin: 16.5px auto;
+    transform: rotate(-45deg);
+    z-index: 2;
+    position: relative;
+}
+
+.boost {
+    width: 12px;
+    height: 12px;
+    border: 1px solid;
+    border-left: none;
+    border-bottom: none;
+}
+
+.boost-btn:hover {
+    color: red;
+}
+
+.boost2 {
+    position: absolute;
+    top: 3px;
+}
+
+.boost1 {
+    position: absolute;
+    right: 0;
+}
+
 /*Подвал*/
 
 .endinfo {
     /*outline: solid 2px darkblue;*/
+    display: block;
     width: 100%;
     height: 45px;
     float: left;
@@ -297,4 +476,97 @@
 .endinfo-social_links {
     width: 30%;
     text-align: right;
+}
+
+@media screen and (min-width: 0px) and (max-width: 640px) {
+
+    .headinfo,
+    .endinfo,
+    .menu,
+    .preblog_box {
+        display: none;
+    }
+
+    .hidden-menu,
+    .btn-menu,
+    .hidden-header,
+    .btn-menu span,
+    .footer {
+        display: block;
+    }
+
+    .desktop {
+        font-size: 0.81em;
+    }
+
+    .fa-vk {
+        top: -3px;
+    }
+
+    .fa-facebook {
+        top: -1px;
+    }
+
+    .home {
+        height: 33px;
+        line-height: 33px;
+    }
+
+    .preblog-hidden {
+        display: flex;
+    }
+
+    .preblog-text {
+        height: 450px;
+    }
+}
+
+@media screen and (min-width: 641px) and (max-width: 900px) {
+
+    .preblog_box {
+        display: none;
+    }
+
+    .desktop {
+        font-size: 0.91em;
+    }
+
+    .home {
+        height: 33px;
+        line-height: 33px;
+    }
+
+    .preblog-hidden {
+        display: flex;
+    }
+
+    .preblog-text {
+        height: 450px;
+    }
+
+    .blog-img {
+        width: 40%;
+    }
+
+    .blog2-img {
+        width: 45%;
+    }
+
+    .blog3-img {
+        width: 39%;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+     .blog-img {
+        width: 30%;
+    }
+
+    .blog2-img {
+        width: 30%;
+    }
+
+    .blog3-img {
+        width: 30%;
+    }
 }

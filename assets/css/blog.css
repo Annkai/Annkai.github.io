@@ -322,6 +322,15 @@ h1 {
 
 /*Предпросмотр из блога*/
 
+.gogallery {
+    text-decoration: none;
+    color: black;
+}
+
+.gogallery:hover {
+    color: #009999;
+}
+
 .preblog_box {
     outline: solid 2px transparent;
     width: 100%;
@@ -558,7 +567,7 @@ h1 {
 }
 
 @media screen and (min-width: 1200px) {
-     .blog-img {
+    .blog-img {
         width: 30%;
     }
 

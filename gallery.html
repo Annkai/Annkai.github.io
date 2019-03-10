@@ -7,6 +7,15 @@
     <title>Photoblog | Gallery</title>
     <link href="assets/css/gallery.css" rel="stylesheet" type="text/css" />
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <script type="text/javascript">
+        function openImageWindow(src) {
+            var image = new Image();
+            image.src = src;
+            var width = image.width;
+            var height = image.height;
+            window.open(src, "Image", "width=" + width + ",height=" + height);
+        }
+    </script>
 </head>
 
 <body class="desktop">
@@ -60,16 +69,16 @@
     </div>
     <div class="home"><a href="index.html" class="gohome">НА ГЛАВНУЮ</a> | <span class="home_color">ГАЛЕРЕЯ</span></div>
 
-  <div class="hovergallery">
-    <img src="assets/img/2-71.jpg"  title="Лошицкий парк" ; alt="Лошицкий парк" ;></img>
-    <img src="assets/img/3-2.jpg"  title="&laquo;А&raquo; Фэст" ; alt="&laquo;А&raquo; Фэст" ;></img>
-    <img src="assets/img/3-5.jpg" title="Минское море" ; alt="Минское море" ;></img>
-    <img src="assets/img/4-43.jpg"  title="Иней на листьях" ; alt="Иней на листьях" ;></img>
-    <img src="assets/img/4-056.jpg" title="Солнце в тумане" ; alt="Солнце в тумане" ;></img>
-    <img src="assets/img/3692.jpg"  title="Театр Эстрады" ; alt="Театр Эстрады" ;></img>
-</div>
+    <div class="hovergallery">
+        <img src="assets/img/2-71.jpg" title="Лошицкий парк" ; alt="Лошицкий парк" ; onclick = 'openImageWindow(this.src);' /></img>
+        <img src="assets/img/3-2.jpg" title="&laquo;А&raquo; Фэст" ; alt="&laquo;А&raquo; Фэст" ; onclick = 'openImageWindow(this.src);' /></img>
+        <img src="assets/img/3-5.jpg" title="Минское море" ; alt="Минское море" ; onclick = 'openImageWindow(this.src);' /></img>
+        <img src="assets/img/4-43.jpg" title="Иней на листьях" ; alt="Иней на листьях" ; onclick = 'openImageWindow(this.src);' /></img>
+        <img src="assets/img/4-056.jpg" title="Солнце в тумане" ; alt="Солнце в тумане" ; onclick = 'openImageWindow(this.src);' /></img>
+        <img src="assets/img/3692.jpg" title="Театр Эстрады" ; alt="Театр Эстрады" ; onclick = 'openImageWindow(this.src);' /></img>
+    </div>
 
-<div class="footer">
+    <div class="footer">
         <div class="boost-btn">
             <a href="#">
                 <div class="boost boost1"></div>
@@ -78,7 +87,7 @@
         </div>
     </div>
 
-       <header class="endinfo">
+    <header class="endinfo">
         <div class="endinfo__all endinfo-name">2019
         </div>
         <div class="endinfo__all endinfo-social_links">

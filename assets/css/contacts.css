@@ -20,6 +20,7 @@ p {
     /*Выбрать шрифт*/
     color: white;
     font-size: 15px;
+    margin-top: -17px;
 }
 
 .headinfo__all {

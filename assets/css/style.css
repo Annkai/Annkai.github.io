@@ -318,8 +318,8 @@ h1 {
 /*слайдер двигащийся*/
 
 .gogallery {
-     text-decoration: none;
-     color: black;
+    text-decoration: none;
+    color: black;
 }
 
 .gogallery:hover {
@@ -612,7 +612,7 @@ h1 {
         display: none;
     }
 
-    
+
     .home {
         height: 33px;
         line-height: 33px;
@@ -638,14 +638,20 @@ h1 {
     .blog3-img {
         width: 39%;
     }
-    
+
     .lastblog-hidden {
         display: flex;
     }
 }
 
+@media screen and (min-width: 900px) and (max-width: 1200px) {
+    .desktop {
+        font-size: 0.80em;
+    }
+}
+
 @media screen and (min-width: 1200px) {
-     .blog-img {
+    .blog-img {
         width: 30%;
     }
 
@@ -657,4 +663,3 @@ h1 {
         width: 30%;
     }
 }
-
